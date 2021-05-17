@@ -23,11 +23,30 @@ body {
     flex-direction: column;
 }
 
-.main-header {
+.main-header, .main-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.main-header {
     height: 100px;
+}
+
+.main-footer {
+    height: 80px;
+    background-color: rgba(186, 178, 181, 0.3);
+    font-weight: bold;
+}
+
+.social-link img {
+    width: 2em;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -39,7 +58,7 @@ body {
     margin-left: .8rem;
 }
 
-.nav-list {
+.nav-list, .footer-nav ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -49,16 +68,18 @@ body {
 }
 
 .logo,
-.nav-item {
+.nav-item,
+.footer-nav a {
     text-decoration: none;
     color: inherit;
 }
 
-.nav-item {
+.nav-item, .footer-nav a {
     padding: 1.2rem;
 }
 
-.nav-item:hover {
+.nav-item:hover,
+.footer-nav a:hover {
     color: #AC3B61;
     transition: 800ms linear;
 }
