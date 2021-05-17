@@ -77,6 +77,10 @@
     animation: scroll-down-bounce 1s alternate infinite linear;
 }
 
+.arrow {
+    width: .6em;
+}
+
 @keyframes scroll-down-bounce {
     from {
       transform: translateY(0);
