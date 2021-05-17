@@ -68,8 +68,15 @@ body {
     font-size: 3em;
     margin-bottom: 1rem;
     margin-top: 0;
-    color: #AC3B61;
     word-break: keep-all;
+}
+
+span {
+    transition: all 1s ease;
+}
+
+span.fade {
+    color: #AC3B61;
 }
 
 .sub-title {
