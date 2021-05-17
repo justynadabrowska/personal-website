@@ -14,7 +14,7 @@
 }
 
 .home-main-section .lady-image {
-    background-image: url('images/landing-image.png');
+    background-image: url('images/about-me-image.png');
     flex-grow: 1;
     background-repeat: no-repeat;
     max-height: 70vh;
@@ -32,13 +32,25 @@
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     .home-main-section .img-wrapper {
         display: none;
     }
 
     .home-main-section {
         justify-content: center;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .sub-title {
+        font-size: 1em;
+    }
+
+    .scroll-text {
+        font-size: .8em;
     }
 }
 
