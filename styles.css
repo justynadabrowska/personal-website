@@ -34,10 +34,6 @@ body {
     height: 100px;
 }
 
-.main-header:hover {
-    border-bottom: 1px solid #AC3B61;
-}
-
 .main-footer {
     height: 80px;
     background-color: rgba(186, 178, 181, 0.3);
@@ -82,13 +78,20 @@ body {
 
 .nav-item, .footer-nav a {
     padding: 1.2rem;
+    padding-bottom: .8rem;
 }
 
 .nav-item:hover,
 .footer-nav a:hover {
     color: #AC3B61;
-    transition: 800ms linear;
+    transition: 300ms linear;
 }
+
+.active {
+    border-bottom: 1px ridge #AC3B61;
+}
+
+
 
 .title {
     font-weight: 500;
