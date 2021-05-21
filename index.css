@@ -73,13 +73,10 @@
 }
 
 .scroll-wrapper img {
-    margin: 2rem 6rem;
+    margin: 2rem 3.5rem;
     animation: scroll-down-bounce 1s alternate infinite linear;
 }
 
-.arrow {
-    width: .6em;
-}
 
 @keyframes scroll-down-bounce {
     from {
@@ -92,9 +89,9 @@
   }
 
 
-  @media (max-width: 950px) {
+  @media (max-width: 550px) {
     .home-main-section .img-wrapper {
-        display: none;
+        max-height: 50vh;
     }
 
     .home-main-section {
@@ -110,20 +107,6 @@
     }
 
     .scroll-text {
-        font-size: .8em;
-    }
-
-    .nav-list {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 482px) {
-    .title {
-        font-size: 1.5em;
-    }
-
-    .sub-title {
         font-size: .8em;
     }
 }
