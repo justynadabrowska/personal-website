@@ -12,6 +12,11 @@
     max-width: 450px;
 }
 
+
+.title {
+    color: #AC3B61;
+}
+
 @media (max-width: 800px) {
     .about-main-section {
         flex-direction: column;
