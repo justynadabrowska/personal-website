@@ -14,11 +14,11 @@ body {
 }
 
 section {
-  height: 90vh;
+  height: 100vh;
 }
 
-#about {
-  height: 100vh;
+#contact {
+  height: 90vh;
 }
 
 .container {
@@ -50,16 +50,25 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10vh;
 }
 
 .main-header {
-  height: 100px;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0rem;
+  z-index: 1;
+  padding: 2rem 7rem;
+}
+
+.main-header:hover {
+  background-color: rgba(237, 199, 183, 0.5);
 }
 
 .main-footer {
-  height: 80px;
-  background-color: rgba(186, 178, 181, 0.3);
+  height: 10vh;
+  background-color: rgba(237, 199, 183, 0.7);
   font-weight: bold;
 }
 
@@ -123,10 +132,6 @@ section {
   color: #AC3B61;
   -webkit-transition: 300ms linear;
   transition: 300ms linear;
-}
-
-.active {
-  border-bottom: 1px ridge #AC3B61;
 }
 
 .title {
