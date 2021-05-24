@@ -13,6 +13,10 @@ body {
   min-height: 100vh;
 }
 
+a {
+  text-decoration: none;
+}
+
 section {
   height: 100vh;
 }
@@ -209,7 +213,7 @@ span.fade {
           justify-content: flex-end;
 }
 
-.home-main-section .lady-image {
+.home-main-section .my-image {
   background-image: url("images/about-me-image.png");
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -339,15 +343,19 @@ span.fade {
           flex-grow: 1;
 }
 
+.about-main-section .title {
+  color: #AC3B61;
+}
+
+.about-main-section .resume-btn {
+  margin-top: 3rem;
+}
+
 .about-main-section .about-me-image {
   width: 30vw;
   margin-left: 2rem;
   height: auto;
   max-width: 450px;
-}
-
-.title {
-  color: #AC3B61;
 }
 
 @media (max-width: 800px) {
@@ -365,6 +373,51 @@ span.fade {
     height: 30vh;
     width: auto;
   }
+}
+
+.projects-main-section {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.projects-main-section .title {
+  margin-top: 2rem;
+}
+
+.project-cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  padding: 2rem;
+  margin: 1em;
+  text-align: center;
+  border: 1px solid #AC3B61;
+  border-radius: 8px;
 }
 
 .contact-main-section {
