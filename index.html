@@ -5,40 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
     <script src="app.js" defer></script>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap" rel="stylesheet">
 </head>
-<body class="container full-height-grow">
-    <header class="main-header">
-        <a href="/" class="logo">
-                <img src="images/Logo.svg" alt="">
-                <div class="logo-name">dabrowska.</div>
-        </a>
-        <nav class="main-nav">
-            <ul class="nav-list">
-                <li><a class="nav-item" href="about.html">About</a></li>
-                <li><a class="nav-item" href="projects.html">Projects</a></li>
-                <li><a class="nav-item" href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="home-main-section">
-        <div class="img-wrapper">
-            <div class="lady-image"></div>
-        </div>
-        <div class="call-to-action">
-            <h1 class="title fancy">Hi there, I'm Justyna.</h1>
-            <div class="sub-title">I'm a frontend developer</div>
-            <div class="scroll-wrapper">
-                <div class="scroll-text">Scroll to get to know me</div>
-                <img class="arrow" src="arrow.svg">
+<body class="full-height-grow">
+    <div class="container full-height-grow">
+
+        <header class="main-header">
+            <a href="/" class="logo">
+                    <img src="images/Logo.svg">
+                    <div class="logo-name">dabrowska.</div>
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a class="nav-item" href="#about">About</a></li>
+                    <li><a class="nav-item" href="#projects">Projects</a></li>
+                    <li><a class="nav-item" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="home-main-section">
+            <div class="img-wrapper">
+                <div class="lady-image"></div>
             </div>
+            <div class="call-to-action">
+                <h1 class="title fancy">Hi there, I'm Justyna.</h1>
+                <div class="sub-title">I'm a frontend developer</div>
+                <div class="scroll-wrapper">
+                    <div class="scroll-text">Scroll to get to know me</div>
+                    <img class="arrow" src="arrow.svg">
+                </div>
+            </div>
+        </section>
+
+        <div class="home-page-circle-1"></div>
+        <div class="home-page-circle-2"></div>
+        <div class="home-page-circle-3"></div>
+
+        <section id="about" class="about-main-section">
+            <div class="call-to-action">
+                <h1 class="title">About me</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente labore dicta accusamus quam officiis, velit reprehenderit nostrum libero vero voluptatem.</p>
+            </div>
+            <img src="images/about-me-image.png" class="about-me-image">
+        </section>
+
+        <section id="contact" class="contact-main-section">
+            <h1 class="contact-title">contact me</h1>
+            <form class="contact-form" >
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email">
+                </div>
+                <div class="input-group">
+                    <label for="message">Message:</label>
+                    <textarea></textarea>
+                </div>
+                <div class="input-group">
+                    <button type="submit" class="btn">Send Now</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="https://github.com/justynadabrowska" class="social-link"><img src="images/github1.svg">Github</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/justyna-dabrowska-20a9331b1/" class="social-link"><img src="images/linkedin1.svg">LinkedIn</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </section>
-    <div class="home-page-circle-1"></div>
-    <div class="home-page-circle-2"></div>
-    <div class="home-page-circle-3"></div>
+    </footer>
+
 </body>
 </html>
