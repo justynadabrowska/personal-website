@@ -1,3 +1,5 @@
+//animation on a title
+
 const text = document.querySelector(".fancy");
 const strText = text.textContent;
 const splitText = strText.split("");
@@ -24,3 +26,12 @@ function complete() {
   clearInterval(timer);
   timer = null;
 }
+
+//toggle navbar
+
+const navToggle = document.querySelector(".nav-toggle");
+const links = document.querySelector(".nav-links");
+
+navToggle.addEventListener("click", function () {
+  links.classList.toggle("show-links");
+});

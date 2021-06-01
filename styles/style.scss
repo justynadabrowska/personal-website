@@ -1,6 +1,6 @@
-@import 'styles/projects';
-@import 'styles/contact';
-@import 'styles/footer';
+@import 'projects';
+@import 'contact';
+@import 'footer';
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -38,6 +38,7 @@ header {
     right: 10%;
     left: 10%;
     z-index: 1;
+    color: inherit;
 }
 
 
@@ -46,7 +47,7 @@ header {
 }
 
 .logo-container {
-    flex: 1;
+    flex: 2;
     align-items: center;
 
     .logo {
@@ -64,7 +65,6 @@ nav {
 
     .nav-link {
         text-decoration: none;
-        color: #444;
     }
 }
 
@@ -73,6 +73,24 @@ nav {
   -webkit-transition: 300ms linear;
   transition: 300ms linear;
 }
+
+.links {
+    height: auto;
+}
+
+.nav-toggle {
+    font-size: 1.5rem;
+    color: inherit;
+    background: transparent;
+    border-color: transparent;
+    transition: 1s linear;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-toggle:hover {
+    transform: rotate(180deg);
+  }
 
 main {
     position: relative;
@@ -232,6 +250,7 @@ span.fade {
     .intro-text {
         h1 {
         font-size: 30px;
+        margin-top: 8rem;
         }
 
         p {
@@ -241,12 +260,62 @@ span.fade {
 
     .cta {
         padding: 10px 0 0 0;
+
     }
     
     .cover img {
         height: 40%;
         margin-top: 100px;
     }
+  }
+
+  @media (max-width: 400px) {
+    .cta .cta-about {
+        margin-left: 0;
+    }
+  }
+
+  @media (max-width: 800px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .nav-toggle {
+          display: block;
+          margin-left: 4rem;
+      }
+
+    .nav-links a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        transition: 1s linear;
+        padding: 0.5rem 1rem;
+        display: block;
+      }
+
+    .nav-links {
+        display: block;
+        height: 0;
+        overflow: hidden;
+        transition: 500ms linear;
+        width: 90vw;
+        margin: auto;
+
+        .nav-link:hover {
+            background-color: #eee;
+        }
+      }
+
+    .show-links {
+        height: 10rem;
+      }
+
+
   }
 
 
