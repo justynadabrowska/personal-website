@@ -146,13 +146,17 @@ textarea {
   max-height: 200px;
 }
 
-@media (max-width: 1223px) {
+@media (max-width: 900px) {
   .contact-main-section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 6rem auto;
+  }
+  .contact-form {
+    width: 100vw;
+    max-width: 100%;
   }
   .contact-title {
     margin: 0 0 3rem 0;
@@ -172,6 +176,23 @@ footer {
   background-color: rgba(186, 178, 181, 0.3);
   width: 100%;
   padding: 0 10% 0 10%;
+}
+
+nav {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+nav .footer-nav-links {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+nav .nav-link {
+  text-decoration: none;
 }
 
 .footer-title {
@@ -239,7 +260,7 @@ header {
   color: inherit;
 }
 
-.logo-container, .nav-links, .btn-container {
+.logo-container, .nav-links, .footer-nav-links, .btn-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

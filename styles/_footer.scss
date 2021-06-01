@@ -9,6 +9,20 @@ footer {
     padding: 0 10% 0 10%;
 }
 
+nav {
+    flex: 2;
+
+    .footer-nav-links {
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+    .nav-link {
+        text-decoration: none;
+    }
+}
+
+
 .footer-title {
     font-size: 1em;
     font-weight: normal;
