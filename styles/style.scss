@@ -1,6 +1,6 @@
-@import 'projects';
-@import 'contact';
-@import 'footer';
+@import 'styles/projects';
+@import 'styles/contact';
+@import 'styles/footer';
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -74,22 +74,6 @@ nav {
   transition: 300ms linear;
 }
 
-.btn-container {
-    flex: 1;
-    justify-content: flex-end;
-
-    .contact-btn {
-        border: none;
-        outline: none;
-        border: 1px solid #333;
-        border-radius: 2222em;
-        padding: .4em .6em;
-    }
-
-    .contact-btn:hover {
-        background-color: #eee;
-    }
-}
 main {
     position: relative;
 }
@@ -154,6 +138,16 @@ span.fade {
         color: white;
         margin: 30px 0 0 30px;
     }
+}
+
+.cta-resume:hover,
+.cta-resume:focus {
+  background-color: #eee;
+}
+
+.cta-about:hover,
+.cta-about:focus {
+    background-color: #195594;
 }
 
 .cover {

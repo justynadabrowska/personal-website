@@ -281,27 +281,6 @@ nav .nav-link {
   transition: 300ms linear;
 }
 
-.btn-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.btn-container .contact-btn {
-  border: none;
-  outline: none;
-  border: 1px solid #333;
-  border-radius: 2222em;
-  padding: .4em .6em;
-}
-
-.btn-container .contact-btn:hover {
-  background-color: #eee;
-}
-
 main {
   position: relative;
 }
@@ -368,6 +347,16 @@ span.fade {
   border: none;
   color: white;
   margin: 30px 0 0 30px;
+}
+
+.cta-resume:hover,
+.cta-resume:focus {
+  background-color: #eee;
+}
+
+.cta-about:hover,
+.cta-about:focus {
+  background-color: #195594;
 }
 
 .cover {
