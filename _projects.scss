@@ -1,0 +1,38 @@
+.projects-main-section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    min-height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-weight: 500;
+        font-size: 2em;
+        margin-bottom: 3rem;
+        margin-top: 0;
+}
+
+.project-cards-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    padding: 2rem;
+    margin: 1em;
+    text-align: center;
+    border: 1px solid #AC3B61;
+    border-radius: 8px;
+}
+
+@media (max-width: 1223px) {
+    .project-cards-wrapper {
+        flex-direction: column;
+    }
+}

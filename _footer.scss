@@ -1,0 +1,30 @@
+footer {
+    display: flex;
+    height: 10vh;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    background-color: rgba(186, 178, 181, 0.3);
+    width: 100%;
+    padding: 0 10% 0 10%;
+}
+
+.footer-title {
+    font-size: 1em;
+    font-weight: normal;
+    color: inherit;
+}
+
+#footer-links {
+    justify-content: flex-end;
+
+    li:first-of-type {
+        margin-right: 1em;
+    }
+}
+
+
+.nav-link img {
+    width: 1em;
+    margin-right: .3em;
+  }

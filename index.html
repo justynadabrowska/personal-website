@@ -9,49 +9,43 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap" rel="stylesheet">
 </head>
-<body class="full-height-grow">
-    <div class="container full-height-grow">
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo1.svg" alt="">
+            <p class="logo">dabrowska.</p>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <header class="main-header">
-            <a href="/" class="logo">
-                    <img src="images/logo1.svg">
-                    <div class="logo-name">dabrowska.</div>
-            </a>
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li><a class="nav-item" href="#about">About</a></li>
-                    <li><a class="nav-item" href="#projects">Projects</a></li>
-                    <li><a class="nav-item" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section class="home-main-section">
-            <div class="img-wrapper">
-                <div class="my-image"></div>
-            </div>
-            <div class="call-to-action">
-                <h1 class="title fancy">Hi there, I'm Justyna.</h1>
-                <div class="sub-title">I'm a frontend developer</div>
-                <div class="scroll-wrapper">
-                    <div class="scroll-text">Scroll to get to know me</div>
-                    <img class="arrow" src="images/arrow11.svg">
+    <main>
+        <section id="home" class="presentation">
+            <div class="introduction">
+                <div class="intro-text">
+                    <h1 class="fancy">Hi, I'm Justyna</h1>
+                    <p>Front End Developer</p>
+                </div>
+                <div class="cta">
+                    <button class="cta-resume"><a href="about.html">About me</a></button>
+                    <button class="cta-about"><a href="resume.html">Resume</a></button>
                 </div>
             </div>
+            <div class="cover">
+                <img src="images/about-me-image.png" alt="about me picture">
+            </div>
         </section>
-
         <div class="home-page-circle-1"></div>
         <div class="home-page-circle-2"></div>
         <div class="home-page-circle-3"></div>
-
-        <section id="about" class="about-main-section">
-            <div class="call-to-action">
-                <h1 class="title">About me</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente labore dicta accusamus quam officiis, velit reprehenderit nostrum libero vero voluptatem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste veritatis impedit voluptates itaque, porro ut sunt voluptatem nisi deleniti commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, harum!</p>
-                <div class="resume-btn"><a href="resume.html" class="btn">My resume</a></div>
-            </div>
-            <img src="images/about-me-image.png" class="about-me-image">
-        </section>
+        <!-- <div class="scroll-wrapper">
+            <img class="arrow" src="images/arrow11.svg">
+        </div> -->
 
         <section id="projects" class="projects-main-section">
             <h1 class="title">My projects</h1>
@@ -82,28 +76,23 @@
                 </div>
             </form>
         </section>
-    </div>
 
-    <footer class="main-footer">
-        <div class="container">
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <nav class="footer-nav">
-                <ul>
+    </main>  
+
+    <footer>
+            <h4 class="footer-title">Justyna Dabrowska 2021</h4>
+            <nav>
+                <ul class="nav-links" id="footer-links">
                     <li>
-                        <a href="https://github.com/justynadabrowska" class="social-link"><img src="images/github1.svg">Github</a>
+                        <a href="https://github.com/justynadabrowska" class="nav-link"><img src="images/github1.svg">Github</a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/justyna-dabrowska-20a9331b1/" class="social-link"><img src="images/linkedin1.svg">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/justyna-dabrowska-20a9331b1/" class="nav-link"><img src="images/linkedin1.svg">LinkedIn</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </footer>
-
+  
 </body>
 </html>
