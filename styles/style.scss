@@ -283,6 +283,8 @@ span.fade {
         align-items: center;
         justify-content: space-between;
         padding: 1rem;
+        position: relative;
+        height: 10vh;
     }
 
     .nav-toggle {
@@ -292,19 +294,17 @@ span.fade {
 
     .nav-links a {
         font-size: 1rem;
-        padding: 0.5rem 1rem;
         transition: 1s linear;
-        padding: 0.5rem 1rem;
         display: block;
       }
 
     .nav-links {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         height: 0;
         overflow: hidden;
         transition: 500ms linear;
-        width: 90vw;
-        margin: auto;
 
         .nav-link:hover {
             background-color: #eee;
