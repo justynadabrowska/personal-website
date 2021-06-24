@@ -229,7 +229,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #EEE2DC;
+  background-color: #ffffff;
   color: #123C69;
 }
 
@@ -249,10 +249,11 @@ header {
   height: 10vh;
   width: 80%;
   margin: auto;
+  margin-top: .5em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 10%;
   left: 10%;
@@ -405,7 +406,7 @@ span.fade {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 50vh;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,16 +417,14 @@ span.fade {
 
 .cover img {
   height: 100%;
-  -webkit-filter: drop-shadow(0px 3px 3px #b3b3b3);
-          filter: drop-shadow(0px 3px 3px #b3b3b3);
 }
 
 .home-page-circle-1 {
   position: absolute;
-  width: 25vw;
-  height: 25vw;
+  width: 20vw;
+  height: 20vw;
   border-radius: 50%;
-  background-color: rgba(237, 199, 183, 0.2);
+  background-color: rgba(161, 174, 231, 0.1);
   top: 10%;
   right: 0%;
   z-index: -1;
@@ -433,23 +432,12 @@ span.fade {
 
 .home-page-circle-2 {
   position: absolute;
-  width: 10vw;
-  height: 10vw;
+  width: 15vw;
+  height: 15vw;
   border-radius: 50%;
-  background-color: rgba(186, 178, 181, 0.1);
-  top: 80%;
-  right: 30%;
-  z-index: -1;
-}
-
-.home-page-circle-3 {
-  position: absolute;
-  width: 20vw;
-  height: 20vw;
-  border-radius: 50%;
-  background-color: rgba(237, 199, 183, 0.2);
-  top: 20%;
-  right: 78%;
+  background-color: rgba(179, 190, 240, 0.1);
+  top: 70%;
+  right: 60%;
   z-index: -1;
 }
 
