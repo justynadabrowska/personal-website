@@ -162,7 +162,7 @@ span.fade {
 
 .cta-resume:hover,
 .cta-resume:focus {
-  background-color: #eee;
+    background-color: rgba($color: #b3bef0, $alpha: 0.1);
 }
 
 .cta-about:hover,
@@ -275,7 +275,7 @@ span.fade {
         justify-content: space-between;
         padding: 1rem;
         position: relative;
-        height: 10vh;
+        width: 100%;
     }
 
     .nav-toggle {
@@ -287,23 +287,28 @@ span.fade {
         font-size: 1rem;
         transition: 1s linear;
         display: block;
+        min-width: 100vw;
+        padding: 1em 0;
       }
 
     .nav-links {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         height: 0;
         overflow: hidden;
         transition: 500ms linear;
+        
+      }
 
-        .nav-link:hover {
-            background-color: #eee;
-        }
+      .nav-links a:hover {
+        background-color: #a1aee7;
+        color: white;
       }
 
     .show-links {
         height: 10rem;
+        min-width: 100vw;
       }
 
 

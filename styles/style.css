@@ -394,7 +394,7 @@ span.fade {
 
 .cta-resume:hover,
 .cta-resume:focus {
-  background-color: #eee;
+  background-color: rgba(179, 190, 240, 0.1);
 }
 
 .cta-about:hover,
@@ -527,7 +527,7 @@ span.fade {
             justify-content: space-between;
     padding: 1rem;
     position: relative;
-    height: 10vh;
+    width: 100%;
   }
   .nav-toggle {
     display: block;
@@ -538,6 +538,8 @@ span.fade {
     -webkit-transition: 1s linear;
     transition: 1s linear;
     display: block;
+    min-width: 100vw;
+    padding: 1em 0;
   }
   .nav-links {
     display: -webkit-box;
@@ -547,19 +549,21 @@ span.fade {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     height: 0;
     overflow: hidden;
     -webkit-transition: 500ms linear;
     transition: 500ms linear;
   }
-  .nav-links .nav-link:hover {
-    background-color: #eee;
+  .nav-links a:hover {
+    background-color: #a1aee7;
+    color: white;
   }
   .show-links {
     height: 10rem;
+    min-width: 100vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
