@@ -14,7 +14,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
+    background-color: rgba($color: #a1aee7, $alpha: .1);
     color: #123C69;
 }
 
@@ -70,7 +70,7 @@ nav {
 }
 
 .nav-link:hover {
-  color: #AC3B61;
+  color: #a1aee7;
   -webkit-transition: 300ms linear;
   transition: 300ms linear;
 }
@@ -116,7 +116,7 @@ main {
     h1 {
         font-size: 44px;
         font-weight: 500;
-        color: #123C69;
+        color: #a1aee7;
     }
 
     p {
@@ -131,7 +131,7 @@ span {
 }
 
 span.fade {
-    color: #AC3B61;
+    color: #123C69;
 }
 
 
@@ -174,7 +174,7 @@ span.fade {
 
 .cover {
     flex: 1;
-    height: 60vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
 }
