@@ -394,7 +394,9 @@ span.fade {
 
 .cta-resume:hover,
 .cta-resume:focus {
-  background-color: rgba(179, 190, 240, 0.1);
+  background-color: #a1aee7;
+  color: white;
+  border: none;
 }
 
 .cta-about:hover,
@@ -539,7 +541,7 @@ span.fade {
     transition: 1s linear;
     display: block;
     min-width: 100vw;
-    padding: 1em 0;
+    padding: 10px 0;
   }
   .nav-links {
     display: -webkit-box;
@@ -556,6 +558,7 @@ span.fade {
     overflow: hidden;
     -webkit-transition: 500ms linear;
     transition: 500ms linear;
+    margin-top: .5em;
   }
   .nav-links a:hover {
     background-color: #a1aee7;
